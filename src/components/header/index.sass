@@ -1,28 +1,12 @@
-.header-top
-    background: #ebebeb
-    .container
-        display: flex
-        justify-content: flex-end
-        padding: 0
-        .nav
-            ul
-                display: flex
-                li
-                    margin: 0 2rem
-                    font-size: 1.4rem
-                    line-height: 3rem
-                li:first-child
-                    margin-left: 0
-        .language
-            margin-left: 2rem
-.header-bottom
-    .header-wrapper
-        .right-wrapper
-            .top-wrapper
-                .search-box
-                    input
-                        border-radius: 1rem
-            .bottom-wrapper
+header
+    border-bottom: 2px solid #ed1c24
+    .header-top
+        background: #ebebeb
+        .container
+            display: flex
+            justify-content: flex-end
+            // padding: 0
+            .nav
                 ul
                     display: flex
                     li
@@ -31,3 +15,287 @@
                         line-height: 3rem
                     li:first-child
                         margin-left: 0
+            .language
+                margin: 0 2rem
+                line-height: 3rem
+                position: relative
+                em
+                    font-size: 2.4rem
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    opacity: .5
+    .header-bottom
+        padding: 2rem 0
+        background: #fff
+        .container
+            // padding: 0
+            .header-wrapper
+                display: flex
+                justify-content: space-between
+                .right-wrapper
+                    .top-wrapper
+                        display: flex
+                        justify-content: space-between
+                        .search-box
+                            position: relative
+                            width: 100%
+                            max-width: 588px
+                            input
+                                border-radius: 2rem
+                                width: 100%
+                                border: 1px solid #e1e1e1
+                                height: 4rem
+                                background: #f1f1f1
+                                padding: 0 5rem 0 3rem
+                                font-size: 1.5rem
+                                line-height: 3rem
+                                outline: none
+                            .fa-search
+                                position: absolute
+                                top: 50%
+                                transform: translateY(-50%)
+                                right: 2rem
+                                font-size: 2.4rem
+                                color: #2e3192
+                        .hotline
+                            display: flex
+                            align-items: center
+                            .hotline-left
+                                display: flex
+                                align-items: center
+                                em
+                                    font-size: 2rem
+                                    opacity: .6
+                                p
+                                    font-size: 1.6rem
+                                    color: #2e3192
+                                    font-weight: 500
+                                &::after
+                                    content: ''
+                                    width: 2px
+                                    height: 2rem
+                                    background: #e1e1e1
+                                    margin: 0 2rem
+                            .hotline-right
+                                p
+                                    color: #ed1c24
+                                    font-size: 1.5rem
+                                    font-weight: 500
+                                    // line-height: 3rem        
+                    .bottom-wrapper
+                        ul
+                            display: flex
+                            li
+                                margin: 0 2.5rem
+                                a
+                                    font-size: 1.4rem
+                                    line-height: 3rem
+                                    font-weight: 600
+                                    text-transform: uppercase
+                            li:first-child
+                                margin-left: 0
+                            li:last-child
+                                margin-right: 0
+                .button-toggle
+                    display: none
+                    .button
+                        width: 3rem
+                        height: 2px
+                        background: #000
+                        position: relative
+                        transition: .7s
+                        &::after
+                            content: ''
+                            position: absolute
+                            bottom: 1rem
+                            width: 3rem
+                            height: 2px
+                            background: #000
+                            transition: .4s
+                        &::before
+                            content: ''
+                            position: absolute
+                            top: 1rem
+                            width: 3rem
+                            height: 2px
+                            background: #000
+                            transition: .4s
+                    &.active
+                        .button
+                            background: transparent
+                            transition: .2s
+                            &::after
+                                bottom: 0
+                                transition: .3s
+                                -webkit-transform: rotate(135deg)
+                                -moz-transform: rotate(135deg)
+                                -o-transform: rotate(135deg)
+                                transform: rotate(135deg)
+                            &::before
+                                top: 0
+                                transition: .4s
+                                -webkit-transform: rotate(-135deg)
+                                -moz-transform: rotate(-135deg)
+                                -o-transform: rotate(-135deg)
+                                transform: rotate(-135deg)
+    .nav-mobile
+        width: 40rem
+        background: #fff
+        height: calc(100vh - 58px)
+        position: fixed
+        bottom: 0
+        left: -40rem
+        transition: .7s
+        z-index: 999
+        padding: 1rem
+    .back-drop
+        display: none
+        width: 100%
+        height: calc(100vh - 58px)
+        position: fixed
+        bottom: 0
+        left: 0
+        background: rgba(0, 0, 0, .7)
+        z-index: 1
+        opacity: 0
+        &.active
+            display: block
+            opacity: 1
+@media (max-width: 1200px)
+    header
+        position: fixed
+        width: 100%
+        z-index: 999
+        .header-top
+            display: none
+        .header-bottom
+            padding: 1rem 0
+            .header-wrapper
+                display: flex
+                align-items: center
+                .logo
+                    img
+                        max-width: 200px
+                .right-wrapper
+                    .top-wrapper
+                        .search-box
+                            display: none
+                        .hotline
+                            display: none !important
+                    .bottom-wrapper
+                        display: none
+                .button-toggle
+                    display: block !important
+        .nav-mobile
+            &.active
+                left: 0
+                transition: .7s
+                .nav
+                    padding: 1rem 0
+                    ul
+                        text-align: center
+                        li
+                            font-size: 1.4rem
+                            line-height: 3rem
+                            text-transform: uppercase
+                            font-weight: 600
+                .language
+                    text-align: center
+                .top-wrapper
+                    .search-box
+                        display: block
+                        position: relative
+                        input
+                            border-radius: 2rem
+                            width: 100%
+                            border: 1px solid #e1e1e1
+                            height: 3rem
+                            background: #f1f1f1
+                            padding: 0 5rem 0 1.4rem
+                            font-size: 1.2rem
+                            line-height: 3rem
+                            &::placeholder
+                                font-size: 1.4rem
+                        .fa-search
+                            position: absolute
+                            top: 50%
+                            transform: translateY(-50%)
+                            right: 2rem
+                            font-size: 2rem
+                            color: #2e3192
+                    .hotline
+                        display: flex
+                        align-items: center
+                        padding: 1rem 0
+                        justify-content: center
+                        .hotline-left
+                            display: flex
+                            align-items: center
+                            em
+                                font-size: 2rem
+                                opacity: .6
+                            p
+                                font-size: 1.4rem
+                                color: #2e3192
+                                font-weight: 500
+                            &::after
+                                content: ''
+                                width: 2px
+                                height: 2rem
+                                background: #e1e1e1
+                                margin: 0 2rem
+                        .hotline-right
+                            p
+                                color: #ed1c24
+                                font-size: 1.4rem
+                                font-weight: 500
+                .bottom-wrapper
+                    ul
+                        text-align: center
+                        li
+                            a
+                                font-size: 1.4rem
+                                line-height: 3rem
+                                font-weight: 600
+                                text-transform: uppercase
+@media (max-width: 574px)
+    header
+        .nav-mobile
+            width: 30rem
+            left: -30rem
+            &.active
+                .nav
+                    ul
+                        li
+                            font-size: 1.2rem
+                .language
+                    text-align: center
+                .top-wrapper
+                    .search-box
+                        input
+                            font-size: 1.2rem
+                            &::placeholder
+                                font-size: 1.2rem
+                        .fa-search
+                            position: absolute
+                            top: 50%
+                            transform: translateY(-50%)
+                            right: 2rem
+                            font-size: 2rem
+                            color: #2e3192
+                    .hotline
+                        .hotline-left
+                            em
+                                font-size: 1.8rem
+                            p
+                                font-size: 1.2rem
+                        .hotline-right
+                            p
+                                font-size: 1.2rem
+                .bottom-wrapper
+                    ul
+                        text-align: center
+                        li
+                            a
+                                font-size: 1.2rem

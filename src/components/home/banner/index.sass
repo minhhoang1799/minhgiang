@@ -1,0 +1,187 @@
+.home-banner
+    position: relative
+    .swiper-container
+        position: relative
+        cursor: default
+        .swiper-slide
+            a
+                cursor: default
+                img
+                    width: 100%
+                    height: 100%
+    .nav-wrap
+        position: absolute
+        width: 100%
+        top: 50%
+        left: 50%
+        z-index: 10
+        transform: translate(-50%,-50%)    
+        .navigation
+            display: flex
+            position: relative
+            .swiper-next
+                display: none
+                margin-left: auto
+                color: #ffffff
+                font-size: 2.4rem
+                cursor: pointer
+                position: absolute
+                top: 50%
+                right: 0
+                transform: translateY(-50%)
+                z-index: 9
+                &:focus
+                    outline: none
+            .swiper-prev
+                display: none
+                color: #ffffff
+                font-size: 2.4rem
+                z-index: 9
+                cursor: pointer
+                position: absolute
+                top: 50%
+                left: 0
+                transform: translateY(-50%)
+                z-index: 9
+                &:focus
+                    outline: none
+    &:hover
+        .navigation
+            .swiper-prev
+                display: block
+            .swiper-next
+                display: block
+    .search-wrap    
+        width: 100%
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-80%)
+        z-index: 8
+        padding: 0 calc(8.33% + 2.5rem)
+        .search-box
+            .box-title
+                margin-bottom: 3rem
+                h2
+                text-align: center
+                color: #ffffff
+                text-transform: uppercase
+                font-weight: bold
+                font-size: 3rem
+            .select-wrap
+                display: flex
+                justify-content: center
+                .select
+                    width: 34rem
+                    height: 5rem
+                    border-radius: .5rem
+                    position: relative
+                    overflow: hidden
+                    margin: 0 .5rem
+                    &:first-child
+                        border-top-left-radius: 2.5rem
+                        border-bottom-left-radius: 2.5rem
+                    select
+                        outline: none
+                        border: none
+                        background: #fff
+                        padding: 0 2rem
+                        width: 100%
+                        height: 100%
+                        color: #666
+                        color: rgba(51,51,51,.5)
+                        font-size: 1.4rem
+                        font-weight: 600
+                        appearance: none
+                        option
+                            z-index: 999
+                            font-size: 1.4rem
+                    &::after
+                        position: absolute
+                        top: 50%
+                        right: 3rem
+                        transform: translateY(-50%)
+                        pointer-events: none
+                        color: #666
+                        font: normal normal normal 24px/1 Material Design Icons
+                        font-size: 1.8rem
+                        content: "\f140"        
+                .btn-search
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border-top-right-radius: 2.5rem
+                    border-bottom-right-radius: 2.5rem
+                    background: #cf2435
+                    width: 10rem
+                    height: 5rem
+                    a
+                        padding: 2rem 16rem
+                        color: #fff
+                        font-size: 2rem
+    @media(max-width: 1200px)
+        .search-box
+        .search-wrap
+            padding: 0 5.5rem
+    @media(max-width: 1024px)
+        margin-bottom: 4rem
+        .search-box
+
+        .search-wrap
+            padding: 0 
+            background: #2e3192
+            top: 100%
+            transform: translate(-50%,0)
+            .search-box
+                .box-title
+                    text-align: left
+                    padding: 1rem 0
+                    margin: 0
+                    position: relative
+                    h2
+                        font-size: 1.4rem
+                    &::after
+                        content: '\f002'
+                        font-family: Font Awesome\ 5 Free
+                        font-size: 1.8rem
+                        position: absolute
+                        right: 0
+                        top: 50%
+                        transform: translateY(-50%)
+                .select-wrap
+                    display: none   
+                    flex-wrap: wrap
+                    padding-bottom: 2rem
+                    .select
+                        width: 100%
+                        margin: 0 0 1rem 0
+                        &:first-child
+                            border-top-left-radius: .5rem
+                            border-bottom-left-radius: .5rem
+                    .btn-search
+                        width: 100%
+                        border-radius: .5rem
+                    &.active
+                        display: block
+    @media(max-width: 574px)
+        .search-box
+            .box-title
+                margin-bottom: 1rem
+                h2
+                    font-size: 2.5rem
+            .select-wrap
+                .select
+                    height: 2rem
+                    select
+                        font-size: 1rem
+                        padding: 0 2.2rem
+                        option
+                            font-size: 1rem
+                    &::after
+                        right: .2rem
+                        font-size: 1.4rem
+                .btn-search
+                    width: 5rem
+                    height: 2rem
+                    a
+                        font-size: 1.4rem

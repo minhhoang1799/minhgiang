@@ -1,0 +1,35 @@
+section.news-wrapper
+    .container
+        .title
+            h2 tin tức nổi bật
+        .row
+            .col-lg-6.news-box
+                .video
+                    a(href="https://www.youtube.com/watch?v=SZoQjPrOmXM" data-fancybox="video")
+                        img(src="./img/news-video.png", alt="")
+                        .button
+                            em.mdi.mdi-play
+            - for(i=1;i<3;i++)
+                .col-lg-3.col-md-6.col-sm-6.news-box
+                        a(href="#")
+                            .item
+                                .item-img
+                                    img(src="./img/home-news.png", alt="")
+                                .item-content
+                                    p 20/02/2020
+                                    h3 Minh Giang Auto Accessorie đồng hành cùng Car Passion Festival
+                                    .item-button
+                                        button Xem thêm
+                                            em.material-icons arrow_forward
+            - for(i=1;i<5;i++)
+                .col-lg-3.col-md-6.col-sm-6.news-box
+                        a(href="#")
+                            .item
+                                .item-img
+                                    img(src="./img/home-news.png", alt="")
+                                .item-content
+                                    p 20/02/2020
+                                    h3.bot Minh Giang Auto Accessorie đồng hành cùng Car Passion Festival
+        .search
+            button Xem thêm
+                em.material-icons arrow_forward

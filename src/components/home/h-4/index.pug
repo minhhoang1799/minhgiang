@@ -1,0 +1,39 @@
+section.home-product
+    .container
+        .nav-product
+            ul
+                li
+                    a(href="#") Sản phẩm bán chạy
+                li
+                    a(href="#") Bảo vệ
+                li
+                    a(href="#") Trang trí
+                li
+                    a(href="#") Nắp thùng
+                li
+                    a(href="#") Mâm vỏ
+                li
+                    a(href="#") Giảm xóc
+                li
+                    a(href="#") Đèn điện
+                li
+                    a(href="#") Cứu hộ
+                li
+                    a(href="#") Cắm trại
+        .home-product
+            .product-list
+                - for(i=1;i<16;i++)
+                        .item
+                            .wrap
+                                a(href="#")
+                                    figure
+                                        .img
+                                            img(src="./img/home-product1.png", alt="")
+                                        figcaption
+                                            .title
+                                                h4 Đèn pha led DG-S2 H4 H7
+                                            .price
+                                                .newprice
+                                                    p 1.320.000 đ
+                                                .oldprice
+                                                    p 1.610.000 đ
