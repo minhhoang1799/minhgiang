@@ -1,5 +1,6 @@
 .home-product
-    margin: 3rem 0 3.5rem 0
+    padding: 5rem 0 3.25rem 0
+    background: #f3f3f3
     .nav-product
         overflow-X: auto
         &::-webkit-scrollbar
@@ -14,7 +15,8 @@
                     margin-right: 0
                 a
                     font-size: 1.6rem
-                    &:hover
+                &:hover,&.active
+                    a
                         color: #ed1c24
                         &::after
                             content: ''
@@ -24,57 +26,64 @@
                             background: #ed1c24
                             left: 0
                             bottom: 0
-    .product-list
-        display: flex
-        flex-wrap: wrap
-        margin: 0 -1.25rem
-        .item
-            width: 20%
-            padding: 0 1.25rem
-            margin-bottom: 2.5rem
-            .wrap
-                background: #fff
-                a
-                    .img
-                        img
-                            display: flex
-                            align-items: center
-                            justify-content: center
-                            width: 100%
-                            height: 100%
-                            object-fit: scale-down
-                    figcaption
-                        padding: 0 3rem 4rem 3rem
-                        .title
-                            font-size: 1.6rem
-                            line-height: 2.4rem
-                            color: #333
-                        .price
-                            line-height: 2.4rem
-                            .newprice
-                                font-size: 1.8rem
-                                color: #ed1c24
-                                font-weight: 600
-                            .oldprice
-                                font-size: 1.6rem
-                                color: #a7a7a7
-                                p
-                                    text-decoration: line-through
-            &:hover
+    .product-wrapper
+        padding: 3rem 0 1rem 0
+        .product-list
+            display: flex
+            flex-wrap: wrap
+            margin: 0 -1.25rem
+            .item
+                width: 20%
+                padding: 0 1.25rem
+                margin-bottom: 2.5rem
                 .wrap
-                    box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.59)
-                    figcaption
-                        .title
-                            color: #2e3192
-    @media (max-width: 1024px)
-        .product-list
-            .item
-                width: 25%
-    @media (max-width: 767px)
-        .product-list
-            .item
-                width: 33.33%
-    @media (max-width: 575px)
-        .product-list
-            .item
-                width: 50%
+                    background: #fff
+                    a
+                        .img
+                            max-width: 230px
+                            max-height: 190px
+                            overflow: hidden
+                            padding: 15px
+                            img
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                width: 100%
+                                height: 100%
+                                object-fit: scale-down
+                        figcaption
+                            padding: 0 3rem 4rem 3rem
+                            .title
+                                font-size: 1.6rem
+                                line-height: 2.4rem
+                                color: #333
+                                font-weight: 500
+                            .price
+                                line-height: 2.4rem
+                                .newprice
+                                    font-size: 1.8rem
+                                    color: #ed1c24
+                                    font-weight: 600
+                                .oldprice
+                                    font-size: 1.6rem
+                                    color: #a7a7a7
+                                    p
+                                        text-decoration: line-through
+                &:hover
+                    .wrap
+                        box-shadow: 0 0 2rem -1rem #000
+                        figcaption
+                            .title
+                                color: #2e3192
+        @media (max-width: 1024px)
+            .product-list
+                .item
+                    width: 25%
+        @media (max-width: 767px)
+            .product-list
+                .item
+                    width: 33.33%
+        @media (max-width: 575px)
+            .product-list
+                .item
+                    width: 50%

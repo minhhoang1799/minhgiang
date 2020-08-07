@@ -45,6 +45,7 @@
                 background: #fff
                 padding: 1rem 3rem
                 font-size: 1.5rem
+                font-weight: 500
                 color: #ed1c24
                 position: relative
                 display: flex
@@ -53,6 +54,8 @@
                 em
                     font-size: 1.8rem
                     padding-left: 4px
+                &:hover
+                    border: 2px solid #ed1c24
 footer
     .footer-wrapper
         margin: 4rem 0 2rem 0
@@ -114,13 +117,20 @@ footer
                             flex-direction: column
                             font-size: 1.5rem
                             line-height: 2.4rem
-                            color: #666666
+                            a
+                                color: #666666
+                                &:hover
+                                    color: #ed1c24
+                            
                     .support
                         display: flex
                         flex-direction: column
                         font-size: 1.5rem
                         line-height: 2.4rem
-                        color: #666666
+                        a
+                            color: #666666
+                            &:hover
+                                color: #ed1c24
                     .social
                         ul
                             display: flex
@@ -196,6 +206,7 @@ footer
                     .item
                         .product
                             justify-content: space-around
+                            text-align: left
                         .social
                             ul
                                 justify-content: center
@@ -212,6 +223,9 @@ footer
             .wrapper-bottom
                 .border
                     .item
+                        .support
+                            padding-left: 38%
+                            text-align: left
                         .product
                             justify-content: center
                             .box
@@ -226,5 +240,13 @@ footer
                 flex-direction: column
                 button
                     margin-top: 2.7rem
+    footer    
+        .footer-wrapper
+                .wrapper-bottom
+                    .border
+                        .item
+                            .support
+                                padding-left: 29%
+                                text-align: left
 
 

@@ -7,13 +7,17 @@
     ],
     "js": [
         "bower_components/jquery/dist/jquery.min.js",
+        "bower_components/jquery-ui/jquery-ui.min.js",
         "src/plugins/mapping.js",
         "src/plugins/mapping-listener.js",
+        "src/plugins/Tabslet.js",
         "bower_components/swiper/dist/js/swiper.min.js",
         "bower_components/plyr/dist/plyr.min.js",
         "bower_components/jquery-toast-plugin/dist/jquery.toast.min.js",
         "bower_components/jssocials/dist/jssocials.min.js",
         "bower_components/vanilla-lazyload/dist/lazyload.min.js",
+        "bower_components/waypoints/lib/jquery.waypoints.js",
+        "src/plugins/countUp.js",
         "bower_components/fancybox/dist/jquery.fancybox.js"
     ],
     "css": [

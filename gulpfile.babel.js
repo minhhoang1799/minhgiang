@@ -42,7 +42,7 @@ export const cssCore = () => {
             allowEmpty: true
         })
         .pipe(plumber())
-        .pipe(concat("core.min.css"))
+        .pipe(concat("core2.min.css"))
         .pipe(postcss([
             autoprefixer({
                 browsers: ["last 4 version", "IE 9"],
@@ -62,7 +62,7 @@ export const jsCore = () => {
             allowEmpty: true
         })
         .pipe(plumber())
-        .pipe(concat("core.min.js"))
+        .pipe(concat("core2.min.js"))
         .pipe(uglify())
         .pipe(dest("dist/js"))
 }
@@ -70,7 +70,7 @@ export const jsCore = () => {
 export const styles = () => {
     return src(["./src/components/_core/**.sass", "./src/components/**/**.sass"])
         .pipe(sourcemap.init())
-        .pipe(concat("main.min.sass"))
+        .pipe(concat("main2.min.sass"))
         .pipe(sass().on("error", sass.logError))
         .pipe(postcss([
             autoprefixer({
@@ -106,7 +106,7 @@ export const scripts = () => {
             presets: ["@babel/preset-env"]
         }))
         .pipe(uglifyBabel())
-        .pipe(rename("main.min.js"))
+        .pipe(rename("main2.min.js"))
         .pipe(sourcemap.write("."))
         .pipe(dest("dist/js"))
 }

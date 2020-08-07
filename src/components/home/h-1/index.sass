@@ -1,22 +1,23 @@
 .home-nav
-    padding: 4rem 0
+    padding: 4rem 
+    background: #f3f3f3
     .nav-wrapper
         display: flex
         justify-content: space-around
         .item
-            a
-                .box-img
-                    width: 15rem
-                    height: 15rem
-                    background: #fff
-                    box-shadow: 0 3px 15px 1px rgba(0,0,0,0.1)
-                    border-radius: 50%
-                    display: flex
-                    justify-content: center
-                    align-items: center
-                .text
-                    margin-top: 2rem
-                    text-align: center
+            .box-img
+                width: 15rem
+                height: 15rem
+                background: #fff
+                box-shadow: 0 3px 15px 1px rgba(0,0,0,0.1)
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+            .text
+                margin-top: 2rem
+                text-align: center
+                a
                     color: #000000
                     font-size: 1.6rem
                     font-weight: 500
@@ -25,7 +26,8 @@
                     border: 3px solid #ed2c33
                     box-shadow: none
                 .text
-                    color: #ed2c33
+                    a
+                        color: #ed2c33
     @media(max-width: 1200px)
         .nav-wrapper
             flex-wrap: wrap

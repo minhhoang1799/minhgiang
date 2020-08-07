@@ -1,0 +1,194 @@
+.chi-tiet
+    .catalog-list
+        background: #fff
+        padding: 25px 40px
+        .title
+            margin-bottom: 15px
+            h3
+                font-size: 1.8rem
+                font-weight: 700
+                color: $mainColor-1
+                text-transform: uppercase
+        .nav-catalog
+            border-bottom: 1px solid #cccccc
+            padding-bottom: 20px
+            .icon
+                font-size: 1.6rem
+                font-weight: 700
+                padding-left: 20px
+                position: relative
+                margin: 10px 0 
+                &::before
+                    content: '\f13c'
+                    font: normal normal normal 24px/1 "Material Design Icons"
+                    display: none
+                    position: absolute
+                    top: 0
+                    left: -5px
+                &:after
+                    content: '\f13f'
+                    font: normal normal normal 24px/1 "Material Design Icons"
+                    position: absolute
+                    top: 0
+                    left: -5px
+                .nav-child
+                    display: none
+                    li
+                        font-weight: 400
+                &.active
+                    &::before
+                        display: block
+                    &::after
+                        display: none
+        .range-price
+            border-bottom: 1px solid #cccccc
+            padding: 30px 0
+            p
+                width: max-content
+                input[type=text]
+                    font-size: 14px
+                    color: $mainColor
+                    font-weight: 600
+                    &:focus
+                        outline: none
+            .slider-range
+                margin-bottom: 10px 
+                width: 100%
+                height: 5px
+                background: #cccccc
+                position: relative
+                text-align: left
+                border-radius: .2rem
+                .ui-slider-range
+                    background: $mainColor
+                    height: 5px
+                    position: absolute
+                    display: block
+                .ui-slider-handle
+                    width: 1.2rem
+                    height: 1.2rem
+                    border-radius: 50%
+                    background: #ffffff
+                    border: 1px solid $mainColor
+                    background: $mainColor
+                    position: absolute
+                    touch-action: none
+                    top: 50%
+                    transform: translate(-50%,-50%)
+                    cursor: pointer
+                    &:focus
+                        outline: none
+        .producer
+            border-bottom: 1px solid #cccccc
+            padding: 30px 0
+            .select
+                width: 100%
+                select
+                    width: 100%
+                    height: 40px
+                    padding: 0 15px
+                    border: 1px solid #cccccc
+                    outline: none
+                    font-size: 14px
+                    color: #999
+    .filter-wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 40px 0
+        border-top: 1px solid #000
+        border-bottom: 1px solid #000
+        .main-title
+            margin: 0
+        .filter
+            display: flex
+            align-items: center
+            .name
+                margin-right: 10px
+                p
+                    font-size: 16px
+                    font-weight: 500
+            .select
+                width: 265px
+                height: 40px
+                position: relative
+                select
+                    width: 100%
+                    height: 100%
+                    padding:  0 20px
+                    cursor: pointer
+                    outline: none
+                    color: #999
+                    border: none
+                    appearance: none
+                &::after
+                    content: '\f140'
+                    font: normal normal normal 24px/1 "Material Design Icons"
+                    position: absolute
+                    pointer-events: none
+                    top: 50%
+                    right: 15px
+                    transform: translateY(-50%)
+                    font-size: 30px
+            .show
+                display: flex
+                margin-left: 30px
+                .number-show
+                    display: flex
+                    li
+                        padding: 0 10px
+                        height: 100%
+                        &.active
+                            a
+                                color: $mainColor-1
+                        &:first-child
+                            padding-left: 0
+                        &:last-child
+                            padding-right: 0
+                        &:nth-child(2)
+                            border-left: 1px solid #000
+                            border-right: 1px solid #000
+    .list-item
+        padding: 20px 0
+        .item
+            margin-bottom: 30px
+            .wrap
+                background: #fff
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2)
+                width: 100%          
+                a
+                    figure
+                        .img
+                            height: 215px
+                            width: 100%
+                            overflow: hidden
+                            padding: 25px
+                            img
+                                width: 100%
+                                height: 100%
+                        figcaption
+                            padding: 25px
+                            .title
+                                font-size: 1.8rem
+                                line-height: 2.4rem
+                                color: #333
+                                font-weight: 500
+                            .price
+                                margin-top: 30px
+                                line-height: 2.4rem
+                                .newprice
+                                    font-size: 1.8rem
+                                    color: #ed1c24
+                                    font-weight: 700
+                                .oldprice
+                                    margin-top: 20px
+                                    font-size: 1.6rem
+                                    color: #a7a7a7
+                                    p
+                                        text-decoration: line-through
+                    &:hover
+                        figure
+                            figcaption
+                                .title
+                                    color: $mainColor
+                            

@@ -1,0 +1,107 @@
+section.gallery.line
+    .container
+        .row
+            .col-xl-1.thumbs
+                .swiper-up
+                    em.mdi.mdi-chevron-up
+                .swiper-container.gallery-thumbs
+                    .swiper-wrapper
+                        - for(i=1;i<6;i++)
+                            .swiper-slide
+                                .image-thumbs
+                                    img(src="./img/product/4.png", alt="")
+                .swiper-down
+                    em.mdi.mdi-chevron-down
+            .col-xl-6.top
+                .swiper-container.gallery-top
+                    .swiper-wrapper
+                        - for(i=1;i<6;i++)
+                            .swiper-slide
+                                .image-top
+                                    img(src="./img/product/5.png", alt="")
+            .col-xl-5.mt
+                .description    
+                    .title
+                        h3 Nắp thùng thấp MGC (R16_T) cho Ford Ranger
+                    .price
+                        .new-price
+                            p 1.250.000đ
+                        .old-price
+                            p 1.550.000đ
+                        .social
+                            a(href="#").fab.fa-facebook-f
+                            a(href="#").fab.fa-twitter
+                    .content
+                        p Nắp thùng R17_TW dành riêng cho Ford Ranger Wildtrak có cấu tạo từ chất liệu sợi thủy tinh bền bỉ, chịu được môi trường khắc nghiệt & chống va đập tốt.
+                    .table
+                        table
+                            tr
+                                td Loại sản phẩm:
+                                td Nắp thùng
+                            tr
+                                td Nhà sản xuất:
+                                td MGC
+                            tr
+                                td Loại Xe:
+                                td Ranger
+                            tr
+                                td Hãng xe:
+                                td Ford
+                            tr
+                                td Năm sản xuất:
+                                td 2018-2019
+                    a(href="#")
+                        .btn-contact Liên hệ
+section.desc.line
+    .container
+        .tabs.tabs-default.main-tabslet
+            ul.tabslet-menu
+                li
+                    a(href="#tab-1") thông tin sản phẩm
+                li
+                    a(href="#tab-2") đánh giá
+            #tab-1.tabslet-content
+                ul
+                    li Nắp thùng R17_TW dành riêng cho Ford Ranger Wildtrak có cấu tạo từ chất liệu sợi thủy tinh bền bỉ, chịu được môi trường khắc nghiệt & chống va đập tốt, bảo vệ hàng hóa khỏi mưa nắng hay côn trùng, sâu bọ.
+                    li Nhờ vào thiết kế cải thiện tính năng khí động học, giảm lực cản của gió, nắp thùng R17_TW giúp tiết kiệm xăng hiệu quả
+                    li Đèn thắng tích hợp gia tăng sự an toàn khi di chuyển.
+                    li Đèn la phông cực kỳ tiện ích khi cần lấy đồ trong nắp thùng.
+                    li Tay khóa mở thông minh chất liệu thép không rỉ, hạn chế sự khó khăn khi người dùng đang mang vác nặng với nắp che nước.
+                    li Cơ cấu khóa bền bỉ với tần suất sử dụng cao.
+                    li Ty nâng cốp thủy lực giúp việc đóng mở cốp nhẹ nhàng.
+                    li Ron cao su cản nước chất lượng cao.
+                .image
+                    img(src="./img/product/3.png", alt="")
+                .button
+                    .btn-viewall Xem thêm
+                    .btn-close Đóng
+            #tab-2.tabslet-content
+                .content
+                    p lorem
+section.product-orther.line
+    .container
+        .main-title
+            h2 sản phẩm khác
+        .list
+            .swiper-container
+                .swiper-wrapper
+                    - for(i=1;i<6;i++)
+                        .swiper-slide
+                            .item
+                                .wrap
+                                    a(href="#")
+                                        figure
+                                            .img
+                                                img(src="./img/product/2.png", alt="")
+                                            figcaption
+                                                .title
+                                                    p Thùng Maxtop cho Ford Ranger 
+                                                .price
+                                                    .newprice
+                                                        p 1.320.000 đ
+                                                    .oldprice
+                                                        p 1.610.000 đ
+            .swiper-prev
+                em.mdi.mdi-chevron-left
+            .swiper-next
+                em.mdi.mdi-chevron-right

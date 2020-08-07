@@ -1,0 +1,161 @@
+section.chi-tiet.line
+    .container
+        .row
+            .col-lg-3
+                .catalog-list
+                    .title
+                        h3 danh mục sản phẩm
+                    ul.nav-catalog
+                        li.icon Nắp thùng
+                            ul.nav-child
+                                li 
+                                    a(href="#") Ranger
+                                li 
+                                    a(href="#") Colorado
+                                li 
+                                    a(href="#") Navara	
+                                li 
+                                    a(href="#") Triton
+                                li 
+                                    a(href="#") Hilux	
+                                li 
+                                    a(href="#") BT-50
+                        li.icon Off-Road
+                            ul.nav-child
+                                li 
+                                    a(href="#") Ranger
+                                li 
+                                    a(href="#") Colorado
+                                li 
+                                    a(href="#") Navara	
+                                li 
+                                    a(href="#") Triton
+                                li 
+                                    a(href="#") Hilux	
+                                li 
+                                    a(href="#") BT-50
+                        li.icon Trang trí
+                            ul.nav-child
+                                li 
+                                    a(href="#") Ranger
+                                li 
+                                    a(href="#") Colorado
+                                li 
+                                    a(href="#") Navara	
+                                li 
+                                    a(href="#") Triton
+                                li 
+                                    a(href="#") Hilux	
+                                li 
+                                    a(href="#") BT-50
+                        li.icon Mân - vỏ
+                            ul.nav-child
+                                li 
+                                    a(href="#") Ranger
+                                li 
+                                    a(href="#") Colorado
+                                li 
+                                    a(href="#") Navara	
+                                li 
+                                    a(href="#") Triton
+                                li 
+                                    a(href="#") Hilux	
+                                li 
+                                    a(href="#") BT-50
+                        li.icon Body Kits
+                            ul.nav-child
+                                li 
+                                    a(href="#") Ranger
+                                li 
+                                    a(href="#") Colorado
+                                li 
+                                    a(href="#") Navara	
+                                li 
+                                    a(href="#") Triton
+                                li 
+                                    a(href="#") Hilux	
+                                li 
+                                    a(href="#") BT-50
+                        li.icon Phụ kiện dùng chung
+                            ul.nav-child
+                                li 
+                                    a(href="#") Ranger
+                                li 
+                                    a(href="#") Colorado
+                                li 
+                                    a(href="#") Navara	
+                                li 
+                                    a(href="#") Triton
+                                li 
+                                    a(href="#") Hilux	
+                                li 
+                                    a(href="#") BT-50
+                    .range-price
+                        .title
+                            h3 giá
+                        .slider-range#slider-range
+                        p
+                            label(for="amount") Giá từ:   
+                            input(type="text" id="amount" readonly style="border:0;")
+                    .producer
+                        .title
+                            h3 nhà sản xuất
+                        .select
+                            select(name="")
+                                option(value="0") hãng xe
+                                option(value="1") 1
+                                option(value="2") 2
+                    .producer
+                        .title
+                            h3 năm sản xuất
+                        .select
+                            select(name="")
+                                option(value="0") Năm sản xuất xe
+                                option(value="1") 1
+                                option(value="2") 2
+                    .producer
+                        .title
+                            h3 loại sản phẩm
+                        .select
+                            select(name="")
+                                option(value="0") Loại sản phẩm
+                                option(value="1") 1
+                                option(value="2") 2
+            .col-lg-9
+                .filter-wrapper
+                    .main-title
+                        h2 ranger
+                    .filter
+                        .name
+                            p Sắp xếp:
+                        .select
+                            select(name="")
+                                option(value="0") Xem sản phẩm theo
+                                option(value="1") 1
+                        .show
+                            .name
+                                p Hiển thị:
+                            ul.number-show
+                                li.active
+                                    a(href="#") 9
+                                li
+                                    a(href="#") 18
+                                li
+                                    a(href="#") 36
+                .row.list-item
+                    - for(i=0;i<12;i++)
+                        .col-lg-4
+                            .item
+                                .wrap
+                                    a(href="#")
+                                        figure
+                                            .img
+                                                img(src="./img/product/2.png", alt="")
+                                            figcaption
+                                                .title
+                                                    p Thùng Maxtop cho Ford Ranger 
+                                                .price
+                                                    .newprice
+                                                        p 1.320.000 đ
+                                                    .oldprice
+                                                        p 1.610.000 đ

@@ -1,0 +1,245 @@
+.gallery
+    .thumbs
+        padding: 0
+        .swiper-up,.swiper-down
+            text-align: center
+            outline: none
+            cursor: pointer
+            em
+                font-size: 30px
+        .image-thumbs
+            width: 100%
+            height: 90px
+            img
+                width: 100%
+                height: 100%
+    .image-top
+        width: 100%
+        height: 600px
+        img
+            width: 100%
+            height: 100%
+    .description
+        background: #fff
+        padding: 55px 40px
+        height: 100%
+        .title
+            h3
+                font-size: 3rem
+                font-weight: 600
+                line-height: 35px
+        .price
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            padding: 25px 0
+            border-bottom: 1.5px solid #f3f3f3
+            .new-price
+                flex: 0 0 30%
+                max-width: 30%
+                p
+                    font-size: 2.4rem
+                    color: $mainColor-1
+                    font-weight: 600
+            .old-price
+                flex: 0 0 20%
+                max-width: 20%
+                p
+                    font-size: 1.6rem
+                    text-decoration: line-through
+            .social
+                flex: 0 0 50%
+                max-width: 50%
+                display: flex
+                justify-content: flex-end
+                a
+                    margin: 0 10px
+                    font-size: 22px
+                .fa-facebook-f
+                    color: #227ad3
+                .fa-twitter
+                    color: #3399ff
+        .content
+            padding: 15px 0
+            p
+                font-size: 1.6rem
+        .table
+            table
+                width: 100%
+                tr
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    td
+                        font-size: 1.6rem
+                        flex: 0 0 50%
+                        max-width: 50%
+                        &:first-child
+                            font-weight: 600
+        .btn-contact
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 20px
+            margin: 30px 0
+            width: 180px
+            height: 40px
+            background: $mainColor
+            color: #fff
+            font-size: 1.5rem
+    @media (max-width: 1199px)
+        .thumbs
+            order: 2
+        .top
+            order: 1
+        .mt
+            order: 3
+.desc
+    padding-top: 0 !important
+    .main-tabslet
+        .tabslet-menu
+            display: flex
+            li
+                text-align: center
+                width: 245px
+                height: 50px
+                border: 1px solid #cccccc
+                border-bottom: 0
+                padding: 15px 0
+                background: #fff
+                a
+                    width: 100%
+                    height: 100%
+                    text-transform: uppercase
+                    font-weight: 700
+                    font-size: 1.6rem
+                &:hover,&.active
+                    background: $mainColor-1
+                    a
+                        color: #fff
+        .tabslet-content
+            background: #fff
+            width: 100%
+            padding: 15px
+            ul
+                padding: 0 25px
+                li
+                    list-style-type: disc
+                    margin-bottom: 10px
+                    font-size: 1.6rem
+            .image
+                margin-top: 20px
+                width: 100%
+                height: 100%
+                img
+                    width: 100%
+                    height: 100%
+            .button
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-top: 30px
+                .btn-viewall,.btn-close
+                    font-size: 1.8rem
+                    color: $mainColor-1
+                    position: relative
+                    cursor: pointer
+                .btn-viewall
+                    &:after
+                        content: '\f140'
+                        position: absolute
+                        font: normal normal normal 24px/1 "Material Design Icons"
+                        color: $mainColor-1
+                        top: 50%
+                        transform: translateY(-50%)
+                .btn-close
+                    display: none
+                    &:after
+                        content: '\f143'
+                        position: absolute
+                        font: normal normal normal 24px/1 "Material Design Icons"
+                        color: $mainColor-1
+                        top: 50%
+                        transform: translateY(-50%)
+                &.active
+                    .btn-viewall
+                        display: none
+                    .btn-close
+                        display: block
+    @media (min-width: 1025px)
+        .main-tabslet
+            .tabslet-content
+                padding: 30px 35px
+.product-orther
+    padding-top: 0 !important
+    .list
+        position: relative
+        .swiper-next,.swiper-prev
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            display: flex
+            justify-content: center
+            align-items: center
+            z-index: 10
+            width: 50px
+            height: 50px
+            background: #e4e4e4
+            outline: none
+            cursor: pointer
+            em
+                font-size: 36px
+        .swiper-next
+            right: -5%
+        .swiper-prev
+            left: -5%
+    .swiper-slide
+        .item
+            padding: 5px
+            .wrap
+                background: #fff
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2)
+                width: 100%          
+                a
+                    figure
+                        .img
+                            height: 215px
+                            width: 100%
+                            overflow: hidden
+                            padding: 25px
+                            img
+                                width: 100%
+                                height: 100%
+                        figcaption
+                            padding: 25px
+                            .title
+                                font-size: 1.8rem
+                                line-height: 2.4rem
+                                color: #333
+                                font-weight: 500
+                            .price
+                                margin-top: 30px
+                                line-height: 2.4rem
+                                .newprice
+                                    font-size: 1.8rem
+                                    color: #ed1c24
+                                    font-weight: 700
+                                .oldprice
+                                    margin-top: 20px
+                                    font-size: 1.6rem
+                                    color: #a7a7a7
+                                    p
+                                        text-decoration: line-through
+                    &:hover
+                        figure
+                            figcaption
+                                .title
+                                    color: $mainColor
+    @media (max-width: 1024px)
+        .item
+            .wrap 
+                a 
+                    figure 
+                        figcaption
+                            padding: 15px 25px

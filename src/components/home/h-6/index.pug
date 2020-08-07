@@ -1,7 +1,7 @@
 section.home-icon
     .container
         .icon-wrapper
-            .title
+            .main-title
                 h2 thương hiệu
             .list-wrap
                 - for(i=1;i<13;i++)
@@ -9,39 +9,39 @@ section.home-icon
                         .wrap
                             .img
                                 a(href="#")
-                                    img(src="./img/home-ilogo.png", alt="")
-section.home-about(setBackground="./img/home-background.png")
+                                    img(src="./img/home/home-ilogo.png", alt="")
+section.home-about(setBackground="./img/home/home-background.png")
     .container-fluid
         .row
             .col-lg-6
             .col-lg-6.box
                 .video
                     a(href="https://www.youtube.com/watch?v=SZoQjPrOmXM" data-fancybox="video")
-                        img(src="./img/home-video-demo.png", alt="")
+                        img(src="./img/home/home-video-demo.png", alt="")
                         .button
                             em.mdi.mdi-play    
     .container
         .row
             .col-lg-6.box
                 .about-wrapper
-                    .title
+                    .main-title
                         h2 về  a-extra
                     .content
                         p "A-extra là đơn vị phân phối của Minh Giang Manufacturing & Trading Corp, với hơn 15 năm kinh nghiệm trong lĩnh vực cung cấp sản phẩm, linh kiện, thiết bị cho ô tô đủ để chúng tôi biết được khách hàng của mình cần gì, muốn gì để từ đó sẽ phục vụ bằng cả tâm huyết và mang đến sự hài lòng cho khách hàng. Cùng với vị trí hàng đầu trong ngành công nghiệp ô tô, chúng tôi cống hiến hết mình để cung cấp các sản phẩm cốt lõi hiện đại, chất lượng với các kỹ thuật thông minh, kỹ năng với giá cả hợp lý.
-                    .count-up
+                    .count-number
                         .box
-                            p.box-up(data-num='17') 0
+                            p.box-up.count-up 17
                             p.box-content năm phát triển & hình thành
                         .box
-                            p.box-up(data-num='10000') 0 
+                            p.box-up.count-up 10000 
                             p.metter M
                                 sup 2
                             p.box-content Diện tích nhà máy sản xuất
                         .box
-                            p.box-up(data-num='300') 0
+                            p.box-up.count-up 300
                             p.box-content đại lý phân phối, garage và xưởng trên khắp cả nước
                         .box
-                            p.box-up(data-num='300') 0
+                            p.box-up.count-up 300
                             p.box-content Nhân viên làm việc tại các nhà máy trên toàn quốc
                     .search
                         button Xem thêm

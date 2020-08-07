@@ -1,4 +1,5 @@
 .new-product
+    padding: 6rem 0 3rem 0
     .product-wrapper
         display: flex
         flex-wrap: wrap
@@ -39,6 +40,11 @@
                 flex: 0 0 25%
                 max-width: 25%
                 .item
+                    a
+                        .img
+                            width: 100%
+                            height: 262px
+                            overflow: hidden
                     &:first-child
                         margin-bottom: 3rem 
             &:nth-child(2)
@@ -63,3 +69,12 @@
                     margin-bottom: 3rem
                     flex: 0 0 100%
                     max-width: 100%
+@media (max-width: 767px)
+    .new-product
+        .product-wrapper
+            .wrap
+                &:nth-child(1), &:nth-child(3)
+                    .item
+                        a
+                            .img
+                                height: 100%

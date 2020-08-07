@@ -1,5 +1,12 @@
 header
     border-bottom: 2px solid #ed1c24
+    &.active
+        position: fixed
+        width: 100%
+        z-index: 999
+        top: 0
+        left: 0
+        transition: 3s
     .header-top
         background: #ebebeb
         .container
@@ -13,6 +20,9 @@ header
                         margin: 0 2rem
                         font-size: 1.4rem
                         line-height: 3rem
+                        &:hover
+                            a
+                                text-decoration: underline
                     li:first-child
                         margin-left: 0
             .language
@@ -26,7 +36,7 @@ header
                     transform: translateY(-50%)
                     opacity: .5
     .header-bottom
-        padding: 2rem 0
+        padding-top: 2rem
         background: #fff
         .container
             // padding: 0
@@ -67,10 +77,10 @@ header
                                 em
                                     font-size: 2rem
                                     opacity: .6
-                                p
+                                a
                                     font-size: 1.6rem
                                     color: #2e3192
-                                    font-weight: 500
+                                    font-weight: 700
                                 &::after
                                     content: ''
                                     width: 2px
@@ -78,12 +88,12 @@ header
                                     background: #e1e1e1
                                     margin: 0 2rem
                             .hotline-right
-                                p
+                                a
                                     color: #ed1c24
                                     font-size: 1.5rem
-                                    font-weight: 500
-                                    // line-height: 3rem        
+                                    font-weight: 600     
                     .bottom-wrapper
+                        margin: 1.5rem 0
                         ul
                             display: flex
                             li
@@ -93,6 +103,10 @@ header
                                     line-height: 3rem
                                     font-weight: 600
                                     text-transform: uppercase
+                                &:hover
+                                    a
+                                        color: $mainColor
+                                        text-decoration: underline
                             li:first-child
                                 margin-left: 0
                             li:last-child
@@ -142,7 +156,7 @@ header
     .nav-mobile
         width: 40rem
         background: #fff
-        height: calc(100vh - 58px)
+        height: calc(100vh - 54px)
         position: fixed
         bottom: 0
         left: -40rem
@@ -152,7 +166,7 @@ header
     .back-drop
         display: none
         width: 100%
-        height: calc(100vh - 58px)
+        height: calc(100vh - 54px)
         position: fixed
         bottom: 0
         left: 0
@@ -164,9 +178,6 @@ header
             opacity: 1
 @media (max-width: 1200px)
     header
-        position: fixed
-        width: 100%
-        z-index: 999
         .header-top
             display: none
         .header-bottom
